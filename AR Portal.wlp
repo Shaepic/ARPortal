@@ -1,0 +1,1807 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.9999998,
+                1.0,
+                0.9999998
+            ],
+            "translation": [
+                2.9802322387695313e-8,
+                1.8267718,
+                0.0327436
+            ]
+        },
+        "15": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    },
+                    "active": false
+                }
+            ],
+            "scaling": [
+                4.0,
+                4.0,
+                4.0
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                1.1920928955078125e-7
+            ],
+            "rotation": [
+                -0.7072496,
+                0.0,
+                0.0,
+                0.7069638
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "intensity": 0.201
+                    },
+                    "active": true
+                }
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": "88"
+        },
+        "86": {
+            "name": "Portal",
+            "translation": [
+                0.0,
+                1.7838921,
+                -0.5751647
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "87": {
+            "name": "Panels",
+            "parent": "86",
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "88": {
+            "name": "InsetScene1",
+            "parent": "86",
+            "translation": [
+                0.0,
+                0.0,
+                -0.4975788
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "89": {
+            "name": "Shell",
+            "parent": "88",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "94": {
+            "link": {
+                "name": "OuterShell",
+                "file": "assets\\models\\TristanPortalOuterShell.glb"
+            },
+            "parent": "89",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "99"
+                    }
+                }
+            ]
+        },
+        "97": {
+            "link": {
+                "name": "InnerShell",
+                "file": "assets\\models\\TristanPortalInnerShell.glb"
+            },
+            "parent": "89",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "100"
+                    }
+                }
+            ]
+        },
+        "101": {
+            "link": {
+                "name": "Panel",
+                "file": "assets\\models\\TristanPortalPanel.glb"
+            },
+            "parent": "87",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                0.3,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "99"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                -0.2,
+                0.0
+            ],
+            "name": "PanelBottom"
+        },
+        "103": {
+            "link": {
+                "name": "Panel",
+                "file": "assets\\models\\TristanPortalPanel.glb"
+            },
+            "parent": "87",
+            "rotation": [
+                0.0,
+                0.0,
+                1.0,
+                -4.3711388286737935e-8
+            ],
+            "scaling": [
+                1.0,
+                0.3,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "99"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.2,
+                -0.0
+            ],
+            "name": "PanelTop"
+        },
+        "104": {
+            "link": {
+                "name": "Panel",
+                "file": "assets\\models\\TristanPortalPanel.glb"
+            },
+            "parent": "87",
+            "rotation": [
+                0.0,
+                0.0,
+                -0.7071068,
+                0.7071067
+            ],
+            "scaling": [
+                1.0,
+                0.1999999,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "99"
+                    }
+                }
+            ],
+            "translation": [
+                -0.3,
+                -1.4901161193847656e-8,
+                0.0
+            ],
+            "name": "PanelLeft"
+        },
+        "105": {
+            "link": {
+                "name": "Panel",
+                "file": "assets\\models\\TristanPortalPanel.glb"
+            },
+            "parent": "87",
+            "rotation": [
+                0.0,
+                0.0,
+                0.7071068,
+                0.7071067
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "99"
+                    }
+                }
+            ],
+            "translation": [
+                0.3,
+                1.4901161193847656e-8,
+                0.0
+            ],
+            "name": "PanelRight",
+            "scaling": [
+                1.0,
+                0.2,
+                1.0
+            ]
+        },
+        "107": {
+            "link": {
+                "name": "FrontCover",
+                "file": "assets\\models\\TristanPortalFrontCover.glb"
+            },
+            "parent": "89",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.5
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "99"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        "109": {
+            "name": "Collision1",
+            "parent": "111",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.5
+                            ]
+                        },
+                        "groups": 128
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -0.4908032
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "110": {
+            "name": "SceneManagement",
+            "parent": "86"
+        },
+        "111": {
+            "name": "Collisions",
+            "parent": "110"
+        },
+        "115": {
+            "name": "clearVisor",
+            "parent": "18",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "96",
+                        "material": "99"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere",
+                        "groups": 128,
+                        "box": {
+                            "extents": [
+                                0.0099999,
+                                0.0099999,
+                                0.0099999
+                            ]
+                        },
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "EyeSense"
+                }
+            ],
+            "scaling": [
+                0.15,
+                0.0499999,
+                0.0499999
+            ]
+        },
+        "119": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "name": "Hand Left",
+            "components": [
+                {
+                    "type": "hand-tracking",
+                    "hand-tracking": {
+                        "handSkin": "118"
+                    }
+                }
+            ],
+            "parent": "14",
+            "scaling": [
+                1.0000002,
+                1.0,
+                1.0000002
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "120": {
+            "link": {
+                "name": "l_handMeshNode<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "116",
+                        "mesh": "117",
+                        "skin": "118"
+                    }
+                }
+            ]
+        },
+        "121": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119"
+        },
+        "122": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119"
+        },
+        "123": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119"
+        },
+        "124": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "125": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "126": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "127": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "128": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "129": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "130": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "131": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "132": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "133": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "134": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "135": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "136": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "137": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "138": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "139": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "140": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "141": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "142": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "143": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "144": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "145": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "146": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "147": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "148": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "parent": "119",
+            "skin": "118"
+        },
+        "153": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "name": "Hand Right",
+            "components": [
+                {
+                    "type": "hand-tracking",
+                    "hand-tracking": {
+                        "handedness": "right",
+                        "handSkin": "152"
+                    }
+                }
+            ],
+            "parent": "14",
+            "scaling": [
+                1.0000002,
+                1.0,
+                1.0000002
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "154": {
+            "link": {
+                "name": "r_handMeshNode<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "150",
+                        "mesh": "151",
+                        "skin": "152"
+                    }
+                }
+            ]
+        },
+        "155": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "156": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "157": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "158": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "159": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "160": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "161": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "162": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "163": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "164": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "165": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "166": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "167": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "168": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "169": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "170": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "171": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "172": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "173": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "174": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "175": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "176": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "177": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "178": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "179": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "parent": "153",
+            "skin": "152"
+        },
+        "181": {
+            "name": "OuterLight",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "type": "spot",
+                        "outerAngle": 68.800003,
+                        "intensity": 4.6999998
+                    },
+                    "active": true
+                }
+            ],
+            "translation": [
+                0.0,
+                3.1542537,
+                -0.0000011
+            ],
+            "rotation": [
+                -0.1736482,
+                0.0,
+                0.0,
+                0.9848077
+            ],
+            "scaling": [
+                1.0,
+                0.9999948,
+                0.9999951
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "Panel",
+                "file": "assets\\models\\TristanPortalPanel.glb"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "OuterShell",
+                "file": "assets\\models\\TristanPortalOuterShell.glb"
+            }
+        },
+        "96": {
+            "link": {
+                "name": "InnerShell",
+                "file": "assets\\models\\TristanPortalInnerShell.glb"
+            }
+        },
+        "106": {
+            "link": {
+                "name": "FrontCover",
+                "file": "assets\\models\\TristanPortalFrontCover.glb"
+            }
+        },
+        "117": {
+            "link": {
+                "name": "Mesh",
+                "file": "assets\\models\\hand-left.glb"
+            }
+        },
+        "151": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "assets\\models\\hand-right.glb"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "font": "55"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            },
+            "pipeline": "37"
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "99": {
+            "name": "MaskMat",
+            "pipeline": "34",
+            "Flat": {
+                "color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        },
+        "100": {
+            "name": "InnerMat1",
+            "pipeline": "37",
+            "Flat": {
+                "color": [
+                    0.0980392,
+                    0.0980392,
+                    0.0980392,
+                    1.0
+                ]
+            }
+        },
+        "116": {
+            "link": {
+                "name": "Default_Material",
+                "file": "assets\\models\\hand-left.glb"
+            }
+        },
+        "150": {
+            "link": {
+                "name": "lambert2",
+                "file": "assets\\models\\hand-right.glb"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "lib\\Color.glsl",
+                "file": "default"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "lib\\Compatibility.frag",
+                "file": "default"
+            }
+        },
+        "58": {
+            "link": {
+                "name": "lib\\CoordinateSystems.glsl",
+                "file": "default"
+            }
+        },
+        "59": {
+            "link": {
+                "name": "lib\\GI.frag",
+                "file": "default"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "lib\\Inputs.frag",
+                "file": "default"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "lib\\Lights.frag",
+                "file": "default"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "Matcap.frag",
+                "file": "default"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "lib\\Materials.frag",
+                "file": "default"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "lib\\Math.glsl",
+                "file": "default"
+            }
+        },
+        "66": {
+            "link": {
+                "name": "lib\\MorphTargets.glsl",
+                "file": "default"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "lib\\Packing.frag",
+                "file": "default"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "lib\\PhysicalBSDF.glsl",
+                "file": "default"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "PulseMatcap.frag",
+                "file": "default"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "lib\\Quaternion.glsl",
+                "file": "default"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "ShaepicPhong.frag",
+                "file": "default"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "lib\\ShaepicSurface.frag",
+                "file": "default"
+            }
+        },
+        "76": {
+            "link": {
+                "name": "lib\\Slug.frag",
+                "file": "default"
+            }
+        },
+        "77": {
+            "link": {
+                "name": "lib\\Slug.vert",
+                "file": "default"
+            }
+        },
+        "78": {
+            "link": {
+                "name": "lib\\Surface.frag",
+                "file": "default"
+            }
+        },
+        "79": {
+            "link": {
+                "name": "lib\\Textures.frag",
+                "file": "default"
+            }
+        },
+        "81": {
+            "link": {
+                "name": "lib\\Uniforms.glsl",
+                "file": "default"
+            }
+        },
+        "82": {
+            "link": {
+                "name": "VersiCap.frag",
+                "file": "default"
+            }
+        },
+        "112": {
+            "link": {
+                "name": "AtmosphericSky.frag",
+                "file": "default"
+            }
+        },
+        "113": {
+            "link": {
+                "name": "lib\\SkyProcedural.glsl",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "ARPortal",
+            "version": [
+                1,
+                3,
+                0
+            ]
+        },
+        "xr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19",
+            "ar": {
+                "enable": true
+            },
+            "vr": {
+                "enable": true
+            }
+        },
+        "scripting": {
+            "application": {
+                "output": "ARPortal-bundle.js",
+                "bundling": "esbuild",
+                "esbuildFlags": "--format=esm",
+                "entryPoint": "js/index.js"
+            },
+            "libraryPaths": [
+                "/js/lib/"
+            ],
+            "components": {
+                "bundling": "none"
+            }
+        },
+        "rendering": {
+            "hdr": {
+                "exposure": 1.5
+            },
+            "clearColor": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    },
+    "animations": {},
+    "skins": {
+        "118": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\models\\hand-left.glb"
+            },
+            "joints": [
+                "124",
+                "125",
+                "126",
+                "127",
+                "128",
+                "129",
+                "130",
+                "131",
+                "132",
+                "133",
+                "134",
+                "135",
+                "136",
+                "137",
+                "138",
+                "139",
+                "140",
+                "141",
+                "142",
+                "143",
+                "144",
+                "145",
+                "146",
+                "147",
+                "148"
+            ],
+            "name": "HandLeft"
+        },
+        "152": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\models\\hand-right.glb"
+            },
+            "joints": [
+                "155",
+                "156",
+                "157",
+                "158",
+                "159",
+                "160",
+                "161",
+                "162",
+                "163",
+                "164",
+                "165",
+                "166",
+                "167",
+                "168",
+                "169",
+                "170",
+                "171",
+                "172",
+                "173",
+                "174",
+                "175",
+                "176",
+                "177",
+                "178",
+                "179"
+            ],
+            "name": "HandRight"
+        }
+    },
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "41": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "44": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            },
+            "features": {
+                "SEPARATE_OCCLUSION_TEXTURE": true
+            }
+        },
+        "48": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "SEPARATE_OCCLUSION_TEXTURE": true
+            }
+        },
+        "51": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "Matcap",
+                "file": "default"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "PulseMatcap",
+                "file": "default"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "ShaepicPhong Opaque",
+                "file": "default"
+            }
+        },
+        "74": {
+            "link": {
+                "name": "ShaepicPhong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "80": {
+            "link": {
+                "name": "TileFeedback",
+                "file": "default"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "VersiCap",
+                "file": "default"
+            }
+        },
+        "84": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "85": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "114": {
+            "link": {
+                "name": "AtmosphericSky",
+                "file": "default"
+            }
+        }
+    },
+    "textures": {},
+    "images": {},
+    "fonts": {
+        "55": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "languages": {},
+    "files": {
+        "92": {
+            "fileName": "assets/models/TristanPortalPanel.glb",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "95": {
+            "fileName": "assets/models/TristanPortalOuterShell.glb",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "98": {
+            "fileName": "assets/models/TristanPortalInnerShell.glb",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "108": {
+            "fileName": "assets/models/TristanPortalFrontCover.glb",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "149": {
+            "fileName": "assets/models/hand-left.glb",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "180": {
+            "fileName": "assets/models/hand-right.glb",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        }
+    },
+    "morphTargets": {}
+}
